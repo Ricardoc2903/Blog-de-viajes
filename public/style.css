@@ -1,0 +1,217 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #444;
+}
+
+nav li {
+    text-align: center;
+    padding: 10px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+}
+
+main {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 20px;
+    padding: 20px;
+}
+
+.blog-post {
+    border: 1px solid #ddd;
+    padding: 20px;
+}
+
+/*Formulario*/
+
+.formContainer {
+    display: flex;
+    justify-content: center;
+    background-color: rgb(231, 231, 231);
+    height: 50%;
+    background-size: cover;
+}
+
+.form {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.8);
+    opacity: 0.9;
+  }
+  
+  .textarea {
+    margin: 3px;
+    font-size: 20px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    background-color: #fff;
+  }
+  
+  .input {
+    margin: 3px;
+    font-size: 20px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    background-color: #fff;
+  }
+  
+.form {
+    overflow: hidden;
+    margin: 20px;
+
+  }
+  
+.btn {
+  float: right;
+  margin-right: 20px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  width: 80px;
+  height: 30px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff;
+  background-color: #c60f13;
+  border-radius: 10px;
+  text-align: center;
+  line-height: 30px;
+  cursor: pointer;
+}
+
+.btn-login{
+  display: flex;
+  gap: 10px;
+  background-color: transparent;
+}
+  .input {
+    float: left;
+    margin-left: 20px;
+    margin-top: 20px;
+    width: 200px;
+    height: 30px;
+    padding: 0 15px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+  }
+
+.form span {
+  font-size: 1rem;
+  background-color: beige;
+  padding: .5rem;
+  box-shadow: 2px 2px 5px black;
+  margin: 1rem 0 2rem 0;
+}
+ 
+
+/*Estilos del footer*/
+
+footer{
+  grid-area: footer;
+  color: whitesmoke;
+  background-color: rgb(19, 19, 20);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  font-size: 1rem;
+  padding-bottom: 2rem;
+}
+
+.footer-contact,
+.footer-social,
+.footer-legal{
+  width: 100%;
+  line-height: 2em 0;
+}
+
+footer p {
+  font-size: 1.4rem;
+  margin-bottom: 1em;
+}
+
+footer-icons{
+  font-size: 1.4rem;
+  margin-bottom: 1em;
+}
+
+footer a{
+  text-decoration: none;
+  color: white;
+}
+
+footer a:hover{
+  text-transform: uppercase;
+}
+
+
+/*-----listado style-----*/
+
+/* Estilo para la tabla */
+.styled-table {
+  border-collapse: collapse;
+  width: 100%;
+  max-width: 800px; /* Ajusta el ancho máximo según tu diseño */
+  margin: 0 auto; /* Centra la tabla horizontalmente */
+}
+
+.styled-table th, .styled-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+.styled-table th {
+  background-color: #f2f2f2;
+}
+
+.styled-table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+/* Estilo para los botones */
+.styled-button {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 8px 12px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.styled-button:hover {
+  background-color: #45a049;
+}
+
+/* Estilo para las imágenes en la tabla */
+.styled-table img {
+  max-width: 100px; /* Ajusta el tamaño máximo de la imagen */
+  height: auto;
+}

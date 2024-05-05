@@ -1,0 +1,24 @@
+<section class="formContainer">
+    <header class="admin-header crud-form">
+        <div class="btn">
+            <span> {{user}} </span>
+            <a href="/login/logout"> <input type="button" value="logout"></a>
+            <a href="/listado"><input type="button" value="listado"></a>
+        </div>
+    </header>
+
+    <form class="form crud-form" action="/admin" method="POST" enctype="multipart/form-data">
+        <input type="text" name="pais" placeholder="Pais..." autofocus required>
+        <textarea name="ciudad" rows="5" placeholder="Ciudad..." required></textarea>
+        <textarea name="localizacion" rows="10" placeholder="Localizacion..." required></textarea>
+ 
+        {{!-- accept restringe el tipo de archivos que muestra el explorador de archivos --}}
+        <label for="imagen">Seleccione una imagen</label>
+        <input type="file" id="imagen" name="imagen" accept=".jpg,.gif,.png" required>
+        
+        <div class="btn">
+            <input type="submit">
+            <a href="/admin"><input type="button" value="Cancelar"></a>
+        </div>
+    </form>
+</section>
